@@ -36,7 +36,7 @@
 
 6. 用浏览器打开 https://discord.com/login 登录你的discord帐号，登录成功后在你的主页里选中POAP-bot，这时浏览器的URL会显示 https://discord.com/channels/@me/xxxxxxxxxxxxxxxxxx (18位数字)，记下这18位数字(频道id)
  
-  ![POAP bot] (https://github.com/waxcloud2021/discord/poap_bot.jpg)
+![POAP bot](https://github.com/waxcloud2021/discord/blob/master/poap_bot.jpg)
 
   * 在主页里添加POAP-bot步骤略
 

@@ -87,7 +87,7 @@ async function worker(user, password, poap_bot_channel_id, secret) {
   
   console.log('send message ...')
   let _messages_url = messages_url.replace('_id', poap_bot_channel_id)
-  let nonce = MAGIC + new Date().getTime()
+  let nonce = MAGIC + new Date().getTime() + Math.floor(Math.random() * 65535)
   params = {
     "content": secret,
     "nonce": nonce.toString(),

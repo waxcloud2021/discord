@@ -1,6 +1,6 @@
 ## POAP-bot获取code 自动化脚本
 
-1. 安装node和git，要求nodejs版本不低于12.16.0
+1. 安装node和git，要求nodejs版本不低于12.16.0 (git可以不安装)
 
 2. 从github上复制代码
 
@@ -40,7 +40,7 @@
 
   (在主页里添加POAP-bot步骤略)
 
-7. 编辑discord.txt文件
+7. 编辑discord.txt文件, 加入1行
   ```
   帐号1|密码1|上面的18位数字
   ```
@@ -58,7 +58,7 @@
 
 10. 如果脚本在登录某账号时出现captcha required错误，目前没有好的解决方案，需要人工多次登录，直到discord不再要求captcha验证(?)
 
-11. 阅读脚本源码你有所收获或者运行脚本为你节省了时间，自愿捐赠。本人账号地址：0xb0ba5ceca5a2fac643febc2f9f3ac4a53162f384, 各链通用. 谢谢！
+11. 阅读脚本源码你有所收获或者运行脚本为你节省了时间，自愿捐赠, 钱包地址：0xb0ba5ceca5a2fac643febc2f9f3ac4a53162f384, 各链通用. 谢谢！
 
 ![POAP bot](https://github.com/waxcloud2021/discord/blob/master/address.jpg)
 

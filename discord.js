@@ -18,25 +18,32 @@ const MAGIC = 890383850297884672
 async function main() {
   
   if (process.argv.length < 3) {
-    console.log('node discord.js secret')
+    console.log('node discord.js password|- secret')
     return
   }
 
-  let secret = process.argv[2]
+  let password1 = process.argv[2]
+  let secret = process.argv[3]
 
   let list = fs.readFileSync('discord.txt')
   let lines = list.toString().split('\n')
   let output = ''
   for (let index in lines) {
     let line = lines[index]
+    console.log(++index)
     if (line.startsWith('#')) continue
     let arr = line.split('|')
     if (arr.length != 3) continue
     let user = arr[0]
     let password = arr[1]
     let poap_bot_channel_id = arr[2]
-
-    console.log(++index)
+    if (password == '*') {
+      if (password1 == '-') {
+        console.log('bad password')
+        continue
+      }
+      password = password1
+    }
     
     try {
       output += await worker(user, password, poap_bot_channel_id, secret)

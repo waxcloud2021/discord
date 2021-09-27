@@ -44,15 +44,18 @@
   ```
   帐号1|密码1|上面的18位数字
   ```
+  如果想在命令行指定帐号密码, 密码1处替换成*
 
 8. 如果有多个discord帐号，重复6、7步，最终生成一个完整的discord.txt文件。此操作只需做一次
 
 9. 用和步骤6同一台电脑同一个IP运行脚本(避免脚本登录时出现captcha required错误)
 
   ```
-  node discord 暗语
+  node discord 帐号密码或- 暗语
   ```
   脚本依次登录discord.txt文件里帐号并向POAP-bot发送暗语以获得领取POAP的code. 运行结果保存在 暗语.txt文件中
+
+  * 如果discord.txt文件密码那一列有 *，命令行的第3项需要输入相应的帐号密码；如果密码在discord.txt里都已指定(即密码一列无 *)，这里用 - 占位即可
 
   * 得到code后如何快速claim见 https://github.com/waxcloud2021/poap 脚本
 
